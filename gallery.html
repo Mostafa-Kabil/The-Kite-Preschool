@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | The Kite Preschool</title>
+    <meta name="description" content="See real moments from The Kite Preschool — classroom activities, outdoor play, art, and the joy of learning through exploration.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+<body>
+
+    <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
+    <nav id="main-nav" class="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo" aria-label="The Kite Preschool Home">
+                <img src="assets/images/logo.png" alt="The Kite Preschool Logo" class="nav__logo-img">
+                <span class="nav__logo-text">The Kite<br><span class="nav__logo-accent">Preschool</span></span>
+            </a>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="index.html" class="nav__link">Home</a></li>
+                <li><a href="about.html" class="nav__link">About</a></li>
+                <li><a href="learning.html" class="nav__link">Learning</a></li>
+                <li><a href="activities.html" class="nav__link">Activities</a></li>
+                <li><a href="our-day.html" class="nav__link">Our Day</a></li>
+                <li><a href="our-team.html" class="nav__link">Our Team</a></li>
+                <li><a href="parents.html" class="nav__link">Parents</a></li>
+                <li><a href="gallery.html" class="nav__link active">Gallery</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary nav__cta">Book a Visit</a>
+            <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════ HERO — Film Strip ═══════════════════ -->
+    <section class="hero hero--gallery">
+        <!-- Film Strip Row 1 -->
+        <div class="film-strip" aria-hidden="true">
+            <div class="film-strip__frame"><img src="assets/images/hero-child.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/playgroup.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/children-playing.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/nursery.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/junior.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/senior.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/community.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/gallery.png" alt=""></div>
+            <!-- Duplicate for seamless loop -->
+            <div class="film-strip__frame"><img src="assets/images/hero-child.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/playgroup.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/children-playing.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/nursery.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/junior.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/senior.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/community.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/gallery.png" alt=""></div>
+        </div>
+        <!-- Film Strip Row 2 (Reverse) -->
+        <div class="film-strip film-strip--reverse" aria-hidden="true">
+            <div class="film-strip__frame"><img src="assets/images/curriculum.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/senior.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/community.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/playgroup.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/gallery.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/hero-child.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/nursery.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/junior.png" alt=""></div>
+            <!-- Duplicate -->
+            <div class="film-strip__frame"><img src="assets/images/curriculum.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/senior.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/community.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/playgroup.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/gallery.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/hero-child.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/nursery.png" alt=""></div>
+            <div class="film-strip__frame"><img src="assets/images/junior.png" alt=""></div>
+        </div>
+
+        <div class="hero__content" style="display: block; max-width: 800px; margin: 0 auto; padding: 0 40px; z-index: 10; text-align: center; position: relative;">
+            <h1 class="hero__headline reveal-bounce" style="font-size: clamp(3rem, 5vw, 4.5rem); text-shadow: 0 4px 20px rgba(0,0,0,0.5);">A glimpse into The Kite.</h1>
+            <p class="hero__subtext reveal-up" style="margin: 0 auto 40px; font-size: 1.25rem; text-shadow: 0 2px 10px rgba(0,0,0,0.4);">Real moments, real learning, real joy.</p>
+        </div>
+        <div class="hero__wave" aria-hidden="true" style="bottom: -2px;">
+            <svg viewBox="0 0 1440 120" fill="none" preserveAspectRatio="none" display="block">
+                <path d="M0,0 Q360,120 720,60 T1440,120 L1440,120 L0,120 Z" fill="#ffffff"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ PHOTO OF THE WEEK ═══════════════════ -->
+    <section style="background: var(--bg-light); padding-top: 60px; position: relative; z-index: 10;">
+        <div class="photo-featured reveal-scale">
+            <div class="photo-featured__inner">
+                <img src="assets/images/children-playing.png" alt="Photo of the week" class="photo-featured__image">
+                <div class="photo-featured__overlay">
+                    <div class="photo-featured__badge">⭐ Photo of the Week</div>
+                    <div class="photo-featured__caption">The joy of outdoor discovery!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ GALLERY GRID ═══════════════════ -->
+    <section style="background: var(--bg-light); padding-top: 20px; position: relative; z-index: 10;">
+        
+        <!-- Filters -->
+        <div class="gallery-filters reveal-up">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="classroom">Classroom</button>
+            <button class="filter-btn" data-filter="outdoor">Outdoor</button>
+            <button class="filter-btn" data-filter="art">Art</button>
+            <button class="filter-btn" data-filter="activities">Activities</button>
+        </div>
+
+        <!-- Masonry Grid -->
+        <div class="masonry-grid" id="gallery-grid">
+            
+            <div class="masonry-item masonry-item--large reveal-scale" data-category="classroom activities" data-caption="Flying high!">
+                <img src="assets/images/hero-child.png" alt="Child with kite" class="masonry-image">
+                <div class="masonry-caption">Flying high!</div>
+            </div>
+
+            <div class="masonry-item reveal-scale" data-category="art classroom" data-caption="Messy hands, happy hearts.">
+                <img src="assets/images/playgroup.png" alt="Painting" class="masonry-image">
+                <div class="masonry-caption">Messy hands, happy hearts.</div>
+            </div>
+
+            <div class="masonry-item masonry-item--tall reveal-scale" data-category="outdoor activities" data-caption="Running wild.">
+                <img src="assets/images/children-playing.png" alt="Outdoor play" class="masonry-image">
+                <div class="masonry-caption">Running wild.</div>
+            </div>
+
+            <div class="masonry-item masonry-item--wide reveal-scale" data-category="classroom activities" data-caption="Working together.">
+                <img src="assets/images/nursery.png" alt="Classroom activities" class="masonry-image">
+                <div class="masonry-caption">Working together.</div>
+            </div>
+
+            <div class="masonry-item reveal-scale" data-category="outdoor" data-caption="Sunshine & learning.">
+                <img src="assets/images/community.png" alt="Campus outdoor" class="masonry-image">
+                <div class="masonry-caption">Sunshine &amp; learning.</div>
+            </div>
+
+            <div class="masonry-item masonry-item--large reveal-scale" data-category="classroom art" data-caption="A little bit of science...">
+                <img src="assets/images/junior.png" alt="Science and art" class="masonry-image">
+                <div class="masonry-caption">A little bit of science...</div>
+            </div>
+
+            <div class="masonry-item reveal-scale" data-category="activities" data-caption="Sensory fun!">
+                <img src="assets/images/senior.png" alt="Sensory play" class="masonry-image">
+                <div class="masonry-caption">Sensory fun!</div>
+            </div>
+
+            <div class="masonry-item masonry-item--wide reveal-scale" data-category="outdoor activities" data-caption="Friends forever.">
+                <img src="assets/images/gallery.png" alt="Group play" class="masonry-image">
+                <div class="masonry-caption">Friends forever.</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════ LIGHTBOX ═══════════════════ -->
+    <div class="lightbox" id="gallery-lightbox">
+        <button class="lightbox__close" id="lightbox-close" aria-label="Close">&times;</button>
+        <button class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" aria-label="Previous">&#8249;</button>
+        <img src="" alt="" class="lightbox__image" id="lightbox-image">
+        <button class="lightbox__nav lightbox__nav--next" id="lightbox-next" aria-label="Next">&#8250;</button>
+        <div class="lightbox__caption" id="lightbox-caption"></div>
+    </div>
+
+    <!-- ═══════════════════ FOOTER ═══════════════════ -->
+    <footer id="footer" class="footer" style="margin-top: 80px;">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <img src="assets/images/logo.png" alt="The Kite Preschool" class="footer__logo">
+                    <h2 class="section-heading section-heading--light" style="margin-bottom:8px;">The Kite Preschool</h2>
+                    <p class="footer__tagline">Where every child's imagination takes flight.</p>
+                    <div class="footer__nav-links">
+                        <a href="index.html">Home</a> <a href="about.html">About</a> <a href="learning.html">Learning</a> <a href="activities.html">Activities</a> <a href="our-day.html">Our Day</a> <a href="our-team.html">Our Team</a> <a href="parents.html">Parents</a> <a href="gallery.html">Gallery</a> <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer__info">
+                    <div class="footer__col">
+                        <h3 class="footer__col-title">Contact Us</h3>
+                        <ul class="footer__list footer__list--contact">
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>B10, Service Center,<br>Madinaty, Cairo, Egypt</span></li>
+                        </ul>
+                        <a href="contact.html" class="btn btn--directions" id="directions-btn">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__copy">&copy; 2026 The Kite Preschool. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Gallery Filter Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.masonry-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.getAttribute('data-filter');
+                galleryItems.forEach(item => {
+                    if (filter === 'all') {
+                        item.classList.remove('hidden');
+                        setTimeout(() => item.style.opacity = '1', 10);
+                    } else {
+                        const categories = item.getAttribute('data-category').split(' ');
+                        if (categories.includes(filter)) {
+                            item.classList.remove('hidden');
+                            setTimeout(() => item.style.opacity = '1', 10);
+                        } else {
+                            item.style.opacity = '0';
+                            setTimeout(() => item.classList.add('hidden'), 300);
+                        }
+                    }
+                });
+            });
+        });
+
+        // Lightbox Logic
+        const lightbox = document.getElementById('gallery-lightbox');
+        const lightboxImage = document.getElementById('lightbox-image');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const lightboxClose = document.getElementById('lightbox-close');
+        const lightboxPrev = document.getElementById('lightbox-prev');
+        const lightboxNext = document.getElementById('lightbox-next');
+        let currentLightboxIndex = 0;
+        let visibleItems = [];
+
+        function updateVisibleItems() {
+            visibleItems = Array.from(galleryItems).filter(item => !item.classList.contains('hidden'));
+        }
+
+        function openLightbox(index) {
+            updateVisibleItems();
+            currentLightboxIndex = index;
+            const item = visibleItems[index];
+            if (!item) return;
+            lightboxImage.src = item.querySelector('.masonry-image').src;
+            lightboxCaption.textContent = item.dataset.caption || '';
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function navigateLightbox(direction) {
+            updateVisibleItems();
+            currentLightboxIndex = (currentLightboxIndex + direction + visibleItems.length) % visibleItems.length;
+            const item = visibleItems[currentLightboxIndex];
+            lightboxImage.src = item.querySelector('.masonry-image').src;
+            lightboxCaption.textContent = item.dataset.caption || '';
+        }
+
+        galleryItems.forEach((item, index) => {
+            item.style.cursor = 'pointer';
+            item.addEventListener('click', () => {
+                updateVisibleItems();
+                const visibleIndex = visibleItems.indexOf(item);
+                openLightbox(visibleIndex);
+            });
+        });
+
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+        lightboxPrev.addEventListener('click', (e) => { e.stopPropagation(); navigateLightbox(-1); });
+        lightboxNext.addEventListener('click', (e) => { e.stopPropagation(); navigateLightbox(1); });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') navigateLightbox(-1);
+            if (e.key === 'ArrowRight') navigateLightbox(1);
+        });
+    </script>
+</body>
+</html>

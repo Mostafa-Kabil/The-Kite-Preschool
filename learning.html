@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning | The Kite Preschool</title>
+    <meta name="description" content="Discover how The Kite Preschool supports holistic child development through play-based learning across cognitive, social, emotional, and physical domains.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+<body>
+
+    <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
+    <nav id="main-nav" class="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo" aria-label="The Kite Preschool Home">
+                <img src="assets/images/logo.png" alt="The Kite Preschool Logo" class="nav__logo-img">
+                <span class="nav__logo-text">The Kite<br><span class="nav__logo-accent">Preschool</span></span>
+            </a>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="index.html" class="nav__link">Home</a></li>
+                <li><a href="about.html" class="nav__link">About</a></li>
+                <li><a href="learning.html" class="nav__link active">Learning</a></li>
+                <li><a href="activities.html" class="nav__link">Activities</a></li>
+                <li><a href="our-day.html" class="nav__link">Our Day</a></li>
+                <li><a href="our-team.html" class="nav__link">Our Team</a></li>
+                <li><a href="parents.html" class="nav__link">Parents</a></li>
+                <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary nav__cta">Book a Visit</a>
+            <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════ HERO — Split with Torn Edge ═══════════════════ -->
+    <section class="hero hero--learning">
+        <div class="hero__text-side">
+            <div class="reveal-up">
+                <h1 style="font-family: var(--font-display); font-weight: 900; letter-spacing: -1px;">Learning doesn't always look like learning.</h1>
+                <p>At The Kite, education is disguised as play, messy art, and outdoor exploration. Every moment of the day builds skills they'll carry for life.</p>
+            </div>
+        </div>
+        <div class="hero__image-side">
+            <img src="assets/images/children-playing.png" alt="Children exploring through play">
+            <!-- Torn paper edge SVG divider -->
+            <svg class="hero__torn-edge" viewBox="0 0 80 800" preserveAspectRatio="none" fill="var(--bg-cream)">
+                <path d="M80,0 L80,800 L0,800 Q20,750 10,700 Q0,650 15,600 Q30,550 5,500 Q-10,450 20,400 Q35,350 10,300 Q0,250 25,200 Q40,150 10,100 Q0,50 20,0 Z"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ CHAPTER BOOK — Development Areas ═══════════════════ -->
+    <section style="background: var(--bg-cream); padding: var(--section-pad) 0; position: relative; z-index: 10;">
+        <div style="text-align: center; max-width: 600px; margin: 0 auto 20px; padding: 0 40px;">
+            <h2 class="section-heading reveal-bounce">How We Support Development</h2>
+            <p style="color: var(--text-body); font-weight: 600; font-size: 1.1rem;">Click any area to learn more about our approach.</p>
+        </div>
+
+        <div class="chapter-section" style="padding-top: 20px; padding-bottom: 40px;">
+            <div class="chapter-item reveal-up" id="chapter-cognitive">
+                <div class="chapter-item__icon" style="background: rgba(155,114,207,0.1);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="var(--purple)" stroke-width="2.5"><path d="M12 2a7 7 0 0 1 7 7c0 2.5-1.3 4.7-3.3 6H8.3C6.3 13.7 5 11.5 5 9a7 7 0 0 1 7-7z"/><path d="M9 22h6M10 18h4"/></svg>
+                </div>
+                <div class="chapter-item__number" style="color: var(--purple);">01</div>
+                <div class="chapter-item__content">
+                    <h3 class="chapter-item__title" style="color: var(--purple);">Cognitive</h3>
+                    <p class="chapter-item__desc">Building early logic, memory, and concentration through puzzles, sequencing games, and exploring how things work.</p>
+                    <button class="chapter-item__expand" onclick="this.closest('.chapter-item').classList.toggle('expanded')">Read More ↓</button>
+                    <div class="chapter-item__details">
+                        <p style="font-size: 1rem; color: var(--text-body); font-weight: 600; line-height: 1.6;">Through structured puzzles, sorting activities, and open-ended exploration, children develop critical thinking skills. They learn to predict outcomes, recognize patterns, and sustain focus over longer periods.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chapter-item reveal-up" id="chapter-communication">
+                <div class="chapter-item__icon" style="background: rgba(139,197,63,0.1);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                </div>
+                <div class="chapter-item__number" style="color: var(--green);">02</div>
+                <div class="chapter-item__content">
+                    <h3 class="chapter-item__title" style="color: var(--green);">Communication</h3>
+                    <p class="chapter-item__desc">Expanding vocabulary and expression through daily story times, group discussions, and active listening.</p>
+                    <button class="chapter-item__expand" onclick="this.closest('.chapter-item').classList.toggle('expanded')">Read More ↓</button>
+                    <div class="chapter-item__details">
+                        <p style="font-size: 1rem; color: var(--text-body); font-weight: 600; line-height: 1.6;">Daily circle time, storytelling, and role-play activities help children expand their vocabulary and develop confidence in self-expression. We celebrate every attempt at communication.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chapter-item reveal-up" id="chapter-social">
+                <div class="chapter-item__icon" style="background: rgba(91,192,235,0.1);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div class="chapter-item__number" style="color: var(--blue);">03</div>
+                <div class="chapter-item__content">
+                    <h3 class="chapter-item__title" style="color: var(--blue);">Social</h3>
+                    <p class="chapter-item__desc">Learning to share spaces, cooperate on tasks, empathize with peers, and form meaningful friendships.</p>
+                    <button class="chapter-item__expand" onclick="this.closest('.chapter-item').classList.toggle('expanded')">Read More ↓</button>
+                    <div class="chapter-item__details">
+                        <p style="font-size: 1rem; color: var(--text-body); font-weight: 600; line-height: 1.6;">Collaborative projects, shared meals, and group play teach children essential social skills. They learn to negotiate, take turns, and understand that their actions affect others.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chapter-item reveal-up" id="chapter-emotional">
+                <div class="chapter-item__icon" style="background: rgba(249,200,70,0.1);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="var(--yellow-dark)" stroke-width="2.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </div>
+                <div class="chapter-item__number" style="color: var(--yellow);">04</div>
+                <div class="chapter-item__content">
+                    <h3 class="chapter-item__title" style="color: var(--yellow-dark);">Emotional</h3>
+                    <p class="chapter-item__desc">Recognizing and naming feelings, building resilience, and developing a secure sense of self-worth.</p>
+                    <button class="chapter-item__expand" onclick="this.closest('.chapter-item').classList.toggle('expanded')">Read More ↓</button>
+                    <div class="chapter-item__details">
+                        <p style="font-size: 1rem; color: var(--text-body); font-weight: 600; line-height: 1.6;">We help children name their emotions, practice self-regulation techniques, and build resilience through supported risk-taking and celebrating small victories.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chapter-item reveal-up" id="chapter-physical">
+                <div class="chapter-item__icon" style="background: rgba(232,142,191,0.1);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="var(--pink)" stroke-width="2.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+                </div>
+                <div class="chapter-item__number" style="color: var(--pink);">05</div>
+                <div class="chapter-item__content">
+                    <h3 class="chapter-item__title" style="color: var(--pink);">Physical</h3>
+                    <p class="chapter-item__desc">Strengthening gross motor skills (running, climbing) and fine motor skills (holding a pencil, threading beads).</p>
+                    <button class="chapter-item__expand" onclick="this.closest('.chapter-item').classList.toggle('expanded')">Read More ↓</button>
+                    <div class="chapter-item__details">
+                        <p style="font-size: 1rem; color: var(--text-body); font-weight: 600; line-height: 1.6;">Our outdoor spaces and movement activities build coordination, balance, and body awareness. Fine motor skills are developed through art, sensory play, and practical life activities.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chapter-item reveal-up" id="chapter-independence" style="border-bottom: none;">
+                <div class="chapter-item__icon" style="background: rgba(75,75,75,0.08);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="var(--text-dark)" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <div class="chapter-item__number" style="color: var(--text-dark);">06</div>
+                <div class="chapter-item__content">
+                    <h3 class="chapter-item__title" style="color: var(--text-dark);">Independence</h3>
+                    <p class="chapter-item__desc">Encouraging self-care routines, making personal choices, and taking responsibility for their environment.</p>
+                    <button class="chapter-item__expand" onclick="this.closest('.chapter-item').classList.toggle('expanded')">Read More ↓</button>
+                    <div class="chapter-item__details">
+                        <p style="font-size: 1rem; color: var(--text-body); font-weight: 600; line-height: 1.6;">Children are encouraged to manage their own belongings, pour their own water, choose their activities, and tidy up their workspace — building real-world confidence every day.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ COMPARISON TABLE ═══════════════════ -->
+    <section style="background: var(--bg-light); padding: var(--section-pad) 0; position: relative; z-index: 10;">
+        <div style="text-align: center; max-width: 600px; margin: 0 auto 60px; padding: 0 40px;">
+            <h2 class="section-heading reveal-bounce">It looks like play. It's actually learning.</h2>
+        </div>
+        <div class="comparison-table reveal-up" style="margin: 0 40px;">
+            <div class="comparison-col comparison-col--looks">
+                <h3>What It Looks Like</h3>
+                <div class="comparison-row">
+                    <div class="comparison-row__icon">🧱</div>
+                    <span class="comparison-row__text">Stacking blocks</span>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-row__icon">🎨</div>
+                    <span class="comparison-row__text">Finger painting</span>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-row__icon">🏃</div>
+                    <span class="comparison-row__text">Running outside</span>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-row__icon">🗣️</div>
+                    <span class="comparison-row__text">Talking to friends</span>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-row__icon">💧</div>
+                    <span class="comparison-row__text">Playing with water</span>
+                </div>
+            </div>
+            <div class="comparison-col comparison-col--learning">
+                <h3>What They're Actually Learning</h3>
+                <div class="comparison-row">
+                    <div class="comparison-row__icon">🧠</div>
+                    <span class="comparison-row__text">Engineering, gravity & spatial reasoning</span>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-row__icon">✋</div>
+                    <span class="comparison-row__text">Fine motor control & self-expression</span>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-row__icon">💪</div>
+                    <span class="comparison-row__text">Gross motor development & risk assessment</span>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-row__icon">🤝</div>
+                    <span class="comparison-row__text">Communication, empathy & negotiation</span>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-row__icon">🔬</div>
+                    <span class="comparison-row__text">Volume, measurement & cause-effect</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ FOOTER ═══════════════════ -->
+    <footer id="footer" class="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <img src="assets/images/logo.png" alt="The Kite Preschool" class="footer__logo">
+                    <h2 class="section-heading section-heading--light" style="margin-bottom:8px;">The Kite Preschool</h2>
+                    <p class="footer__tagline">Where every child's imagination takes flight.</p>
+                    <div class="footer__nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="learning.html">Learning</a>
+                        <a href="activities.html">Activities</a>
+                        <a href="our-day.html">Our Day</a>
+                        <a href="our-team.html">Our Team</a>
+                        <a href="parents.html">Parents</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer__info">
+                    <div class="footer__col">
+                        <h3 class="footer__col-title">Contact Us</h3>
+                        <ul class="footer__list footer__list--contact">
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>B10, Service Center,<br>Madinaty, Cairo, Egypt</span></li>
+                        </ul>
+                        <a href="contact.html" class="btn btn--directions" id="directions-btn">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="footer__social-link btn" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg><span>Facebook</span></a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="footer__social-link btn" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg><span>Instagram</span></a>
+                </div>
+                <p class="footer__copy">&copy; 2026 The Kite Preschool. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

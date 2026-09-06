@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Kite Preschool — Nurturing Your Child's Journey | Madinaty, Cairo</title>
+    <meta name="description" content="The Kite Preschool in Madinaty, Cairo offers a creative, hands-on learning environment where children explore, create, connect and grow through play-based education.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+<body>
+
+    <!-- ═══ LARGE DECORATIVE SVG ELEMENTS & ANIMATIONS ═══ -->
+    <div class="decor" aria-hidden="true">
+        <!-- Saturn/Planet -->
+        <svg class="decor__planet decor__planet--1" width="80" height="80" viewBox="0 0 80 80"><circle cx="40" cy="40" r="22" fill="#F9C846" opacity="0.8"/><ellipse cx="40" cy="40" rx="38" ry="10" fill="none" stroke="#F9C846" stroke-width="2.5" opacity="0.5" transform="rotate(-20 40 40)"/></svg>
+        <svg class="decor__planet decor__planet--2" width="55" height="55" viewBox="0 0 80 80"><circle cx="40" cy="40" r="20" fill="#9B72CF" opacity="0.6"/><ellipse cx="40" cy="40" rx="35" ry="9" fill="none" stroke="#9B72CF" stroke-width="2" opacity="0.4" transform="rotate(-25 40 40)"/></svg>
+        <!-- Large rings -->
+        <svg class="decor__ring decor__ring--1" width="120" height="120" viewBox="0 0 120 120"><circle cx="60" cy="60" r="55" fill="none" stroke="#5BC0EB" stroke-width="4" opacity="0.15"/></svg>
+        <svg class="decor__ring decor__ring--2" width="180" height="180" viewBox="0 0 180 180"><circle cx="90" cy="90" r="85" fill="none" stroke="#E88EBF" stroke-width="5" opacity="0.1"/></svg>
+        <!-- Dots -->
+        <div class="decor__dot decor__dot--1"></div>
+        <div class="decor__dot decor__dot--2"></div>
+        <div class="decor__dot decor__dot--3"></div>
+        <!-- Stars -->
+        <svg class="decor__star decor__star--1" viewBox="0 0 24 24" width="24" height="24"><path d="M12 0 L15 9 L24 12 L15 15 L12 24 L9 15 L0 12 L9 9 Z" fill="#F9C846" opacity="0.5"/></svg>
+        <svg class="decor__star decor__star--2" viewBox="0 0 24 24" width="30" height="30"><path d="M12 0 L15 9 L24 12 L15 15 L12 24 L9 15 L0 12 L9 9 Z" fill="#E88EBF" opacity="0.4"/></svg>
+        <!-- Balloons -->
+        <div class="decor__balloon decor__balloon--1"></div>
+        <div class="decor__balloon decor__balloon--2"></div>
+        <div class="decor__balloon decor__balloon--3"></div>
+        <!-- Birds -->
+        <div class="decor__bird decor__bird--1"><svg viewBox="0 0 50 30"><path d="M5,15 Q15,5 25,15 Q35,5 45,15"/></svg></div>
+        <div class="decor__bird decor__bird--2"><svg viewBox="0 0 50 30"><path d="M5,15 Q15,5 25,15 Q35,5 45,15"/></svg></div>
+    </div>
+
+    <!-- Animated Clouds -->
+    <div class="clouds-layer" aria-hidden="true">
+        <div class="cloud cloud--1"><svg viewBox="0 0 200 80" fill="currentColor"><path d="M40,60 Q40,30 70,30 Q80,10 110,10 Q140,10 150,30 Q180,30 180,60 Z"/></svg></div>
+        <div class="cloud cloud--2"><svg viewBox="0 0 200 80" fill="currentColor"><path d="M40,60 Q40,30 70,30 Q80,10 110,10 Q140,10 150,30 Q180,30 180,60 Z"/></svg></div>
+    </div>
+
+    <!-- Kite String -->
+    <svg id="kite-string" class="kite-string-svg" aria-hidden="true" preserveAspectRatio="none">
+        <path id="kite-string-path" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="4" stroke-dasharray="12 12" stroke-linecap="round"/>
+    </svg>
+
+    <!-- SCROLLING KITE CHARACTER -->
+    <div id="scrolling-kite" class="scrolling-element" data-start-x="0.75" data-start-y="0.65" aria-hidden="true">
+        <svg viewBox="0 0 100 140" width="80" height="110">
+            <!-- Tail -->
+            <path d="M50,90 Q30,110 50,120 T50,140" fill="none" stroke="#F9C846" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M50,90 Q70,110 50,120 T50,140" fill="none" stroke="#E88EBF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Body -->
+            <polygon points="50,10 90,50 50,90 10,50" fill="#9B72CF" stroke="#7952a6" stroke-width="6" stroke-linejoin="round"/>
+            <!-- Kawaii Face -->
+            <circle cx="35" cy="45" r="5" fill="#1a1a2e"/>
+            <circle cx="65" cy="45" r="5" fill="#1a1a2e"/>
+            <!-- Blush -->
+            <circle cx="25" cy="50" r="4" fill="#E88EBF" opacity="0.6"/>
+            <circle cx="75" cy="50" r="4" fill="#E88EBF" opacity="0.6"/>
+            <!-- Smile -->
+            <path d="M42,55 Q50,65 58,55" fill="none" stroke="#1a1a2e" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+    </div>
+
+    <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
+    <nav id="main-nav" class="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo" aria-label="The Kite Preschool Home">
+                <img src="assets/images/logo.png" alt="The Kite Preschool Logo" class="nav__logo-img">
+                <span class="nav__logo-text">The Kite<br><span class="nav__logo-accent">Preschool</span></span>
+            </a>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="index.html" class="nav__link active">Home</a></li>
+                <li><a href="about.html" class="nav__link">About</a></li>
+                <li><a href="learning.html" class="nav__link">Learning</a></li>
+                <li><a href="activities.html" class="nav__link">Activities</a></li>
+                <li><a href="our-day.html" class="nav__link">Our Day</a></li>
+                <li><a href="our-team.html" class="nav__link">Our Team</a></li>
+                <li><a href="parents.html" class="nav__link">Parents</a></li>
+                <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary nav__cta">Book a Visit</a>
+            <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════ HERO ═══════════════════ -->
+    <section id="hero" class="hero">
+        <div class="hero__content">
+            <div class="hero__text">
+                <h1 class="hero__headline reveal-bounce">
+                    <span class="reveal-line">Where little minds</span>
+                    <span class="reveal-line hero__headline--italic">learn to fly.</span>
+                </h1>
+                <p class="hero__subtext reveal-up">A warm, curiosity-driven environment designed for real discovery.</p>
+                <div class="hero__actions reveal-up" style="animation-delay: 0.4s;">
+                    <a href="contact.html" class="btn btn--primary">Book a Visit</a>
+                    <a href="about.html" class="btn btn--ghost">Explore The Kite</a>
+                </div>
+            </div>
+            <div class="hero__image-wrapper reveal-scale">
+                <div class="hero__image-frame">
+                    <img src="assets/images/hero-child.png" alt="A joyful child holding a colorful kite" class="hero__image" loading="eager">
+                </div>
+                <!-- Duolingo style accent shapes -->
+                <div class="hero__blob hero__blob--pink" aria-hidden="true"></div>
+                <div class="hero__blob hero__blob--yellow" aria-hidden="true"></div>
+            </div>
+        </div>
+        <div class="hero__wave" aria-hidden="true">
+            <svg viewBox="0 0 1440 120" fill="none" preserveAspectRatio="none" display="block">
+                <path d="M0,0 Q360,120 720,60 T1440,120 L1440,120 L0,120 Z" fill="#ffffff"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ INTRODUCTION ═══════════════════ -->
+    <section class="split-layout" style="background: var(--bg-light);">
+        <div class="split-layout__image-wrapper reveal-scale">
+            <img src="assets/images/children-playing.png" alt="Children learning together" class="split-layout__image">
+        </div>
+        <div class="split-layout__text reveal-up">
+            <h2 class="split-layout__heading">A place to learn. A place to grow.</h2>
+            <p class="split-layout__body">
+                The Kite Preschool is more than just a facility. It is a carefully prepared environment where children can be children. Here, they are encouraged to ask questions, get messy, build relationships, and discover the world at their own pace.
+            </p>
+            <div>
+                <a href="about.html" class="btn btn--primary" style="margin-top: 16px;">About The Kite &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ PHILOSOPHY CONCEPTS ═══════════════════ -->
+    <section class="flow-section">
+        <div class="flow-section__inner">
+            <div class="flow-item reveal-bounce">
+                <h3 class="flow-item__title">Explore</h3>
+                <p class="flow-item__desc">We provide endless opportunities for children to discover the world through hands-on interaction and curiosity-driven play.</p>
+            </div>
+            <div class="flow-item reveal-bounce" style="animation-delay: 0.1s;">
+                <h3 class="flow-item__title">Create</h3>
+                <p class="flow-item__desc">Boundless imagination is celebrated, allowing children to express their unique ideas through art, movement, and storytelling.</p>
+            </div>
+            <div class="flow-item reveal-bounce" style="animation-delay: 0.2s;">
+                <h3 class="flow-item__title">Connect</h3>
+                <p class="flow-item__desc">Building empathy, communication skills, and warm relationships in a collaborative group environment.</p>
+            </div>
+            <div class="flow-item reveal-bounce" style="animation-delay: 0.3s;">
+                <h3 class="flow-item__title">Grow</h3>
+                <p class="flow-item__desc">Celebrating small daily victories to build the strong foundation of lifelong confidence and independence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ LEARNING ═══════════════════ -->
+    <section class="split-layout split-layout--reverse" style="background: var(--bg-light);">
+        <div class="split-layout__image-wrapper reveal-scale" style="transform: rotate(2deg);">
+            <img src="assets/images/nursery.png" alt="Children exploring" class="split-layout__image">
+        </div>
+        <div class="split-layout__text reveal-up">
+            <h2 class="split-layout__heading">They're playing.<br>We're seeing them grow.</h2>
+            <p class="split-layout__body">
+                Every game, every puzzle, and every messy art project serves a purpose. While children are simply enjoying their day, they are actually developing crucial cognitive, physical, and emotional skills that will support them for life.
+            </p>
+            <div>
+                <a href="learning.html" class="btn btn--primary" style="margin-top: 16px;">How We Learn &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ ACTIVITIES COLLAGE ═══════════════════ -->
+    <section style="background: var(--bg-cream); padding-top: var(--section-pad);">
+        <div style="text-align: center; max-width: 600px; margin: 0 auto 40px; padding: 0 40px;">
+            <h2 class="section-heading reveal-bounce">A day full of discovery</h2>
+        </div>
+        <div class="activity-collage">
+            <div class="activity-collage__item activity-collage__item--large reveal-scale">
+                <img src="assets/images/playgroup.png" alt="Art" class="activity-collage__image">
+                <div class="activity-collage__overlay">
+                    <h3 class="activity-collage__title">Art &amp; Creativity</h3>
+                    <p class="activity-collage__desc">Expressing ideas freely.</p>
+                </div>
+            </div>
+            <div class="activity-collage__item reveal-scale" style="animation-delay: 0.1s;">
+                <img src="assets/images/junior.png" alt="Science" class="activity-collage__image">
+                <div class="activity-collage__overlay">
+                    <h3 class="activity-collage__title">Science</h3>
+                    <p class="activity-collage__desc">Testing hypotheses.</p>
+                </div>
+            </div>
+            <div class="activity-collage__item reveal-scale" style="animation-delay: 0.2s;">
+                <img src="assets/images/senior.png" alt="Outdoor" class="activity-collage__image">
+                <div class="activity-collage__overlay">
+                    <h3 class="activity-collage__title">Outdoor Play</h3>
+                    <p class="activity-collage__desc">Moving and exploring.</p>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; padding: 60px 0;">
+            <a href="activities.html" class="btn btn--secondary" style="color: var(--text-dark); border-color: var(--text-muted);">See All Activities &rarr;</a>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ FINAL CTA ═══════════════════ -->
+    <section style="background: var(--purple); padding: var(--section-pad) 40px; text-align: center; color: #fff; position: relative; z-index: 10;">
+        <h2 class="section-heading section-heading--light reveal-bounce" style="color: #fff;">Come see where they grow.</h2>
+        <a href="contact.html" class="btn btn--directions reveal-up" style="margin-top: 24px; display: inline-block;">Book a Visit</a>
+    </section>
+
+    <!-- ═══════════════════ FOOTER & CLOUDS ═══════════════════ -->
+    <footer id="footer" class="footer">
+        <div class="footer__wave" aria-hidden="true">
+            <svg viewBox="0 0 1440 180" fill="none" preserveAspectRatio="none">
+                <path d="M0,100 Q360,180 720,100 T1440,100 L1440,180 L0,180 Z" fill="#1a1a2e"/>
+            </svg>
+        </div>
+        <!-- Moving Cartoonish Clouds -->
+        <div class="footer__clouds">
+            <div class="footer__cloud footer__cloud--1"><svg viewBox="0 0 200 80" fill="currentColor"><path d="M40,60 Q40,30 70,30 Q80,10 110,10 Q140,10 150,30 Q180,30 180,60 Z"/></svg></div>
+            <div class="footer__cloud footer__cloud--2"><svg viewBox="0 0 200 80" fill="currentColor"><path d="M40,60 Q40,30 70,30 Q80,10 110,10 Q140,10 150,30 Q180,30 180,60 Z"/></svg></div>
+            <div class="footer__cloud footer__cloud--3"><svg viewBox="0 0 200 80" fill="currentColor"><path d="M40,60 Q40,30 70,30 Q80,10 110,10 Q140,10 150,30 Q180,30 180,60 Z"/></svg></div>
+        </div>
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <img src="assets/images/logo.png" alt="The Kite Preschool" class="footer__logo">
+                    <h2 class="section-heading section-heading--light" style="margin-bottom:8px;">The Kite Preschool</h2>
+                    <p class="footer__tagline">Where every child's imagination takes flight.</p>
+                    <div class="footer__nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="learning.html">Learning</a>
+                        <a href="activities.html">Activities</a>
+                        <a href="our-day.html">Our Day</a>
+                        <a href="our-team.html">Our Team</a>
+                        <a href="parents.html">Parents</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer__info">
+                    <div class="footer__col">
+                        <h3 class="footer__col-title">Contact Us</h3>
+                        <ul class="footer__list footer__list--contact">
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>B10, Service Center,<br>Madinaty, Cairo, Egypt</span></li>
+                        </ul>
+                        <a href="contact.html" class="btn btn--directions" id="directions-btn">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="footer__social-link btn" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg><span>Facebook</span></a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="footer__social-link btn" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg><span>Instagram</span></a>
+                </div>
+                <p class="footer__copy">&copy; 2026 The Kite Preschool. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

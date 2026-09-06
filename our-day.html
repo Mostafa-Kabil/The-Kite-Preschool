@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Day | The Kite Preschool</title>
+    <meta name="description" content="Follow a typical day at The Kite Preschool — from morning arrival through exploration, movement, creativity, connection, and home time.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+<body>
+
+    <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
+    <nav id="main-nav" class="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo" aria-label="The Kite Preschool Home">
+                <img src="assets/images/logo.png" alt="The Kite Preschool Logo" class="nav__logo-img">
+                <span class="nav__logo-text">The Kite<br><span class="nav__logo-accent">Preschool</span></span>
+            </a>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="index.html" class="nav__link">Home</a></li>
+                <li><a href="about.html" class="nav__link">About</a></li>
+                <li><a href="learning.html" class="nav__link">Learning</a></li>
+                <li><a href="activities.html" class="nav__link">Activities</a></li>
+                <li><a href="our-day.html" class="nav__link active">Our Day</a></li>
+                <li><a href="our-team.html" class="nav__link">Our Team</a></li>
+                <li><a href="parents.html" class="nav__link">Parents</a></li>
+                <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary nav__cta">Book a Visit</a>
+            <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════ HERO — Sunrise to Sunset ═══════════════════ -->
+    <section class="hero hero--ourday">
+        <div class="hero__sun" aria-hidden="true"></div>
+        <div class="hero__content" style="display: block; max-width: 800px; margin: 0 auto; padding: 0 40px; z-index: 10;">
+            <h1 class="hero__headline reveal-bounce" style="font-size: clamp(3rem, 5vw, 4.5rem);">A day full of little moments.</h1>
+            <p class="hero__subtext reveal-up" style="margin: 0 auto 40px; font-size: 1.25rem;">Routine provides security, but within that routine is absolute freedom to explore.</p>
+        </div>
+        <div class="hero__wave" aria-hidden="true" style="bottom: -2px;">
+            <svg viewBox="0 0 1440 120" fill="none" preserveAspectRatio="none" display="block">
+                <path d="M0,0 Q360,120 720,60 T1440,120 L1440,120 L0,120 Z" fill="#FAF8F5"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ QUICK-SCAN DAY BAR ═══════════════════ -->
+    <section style="background: var(--bg-cream); padding-top: 40px; position: relative; z-index: 10;">
+        <div class="day-bar reveal-up">
+            <div class="day-bar__item">
+                <div class="day-bar__item-icon" style="background: rgba(155,114,207,0.15);">🌅</div>
+                <span class="day-bar__item-time">8:00</span>
+                <span class="day-bar__item-label">Arrive</span>
+            </div>
+            <div class="day-bar__item">
+                <div class="day-bar__item-icon" style="background: rgba(139,197,63,0.15);">🔍</div>
+                <span class="day-bar__item-time">9:00</span>
+                <span class="day-bar__item-label">Explore</span>
+            </div>
+            <div class="day-bar__item">
+                <div class="day-bar__item-icon" style="background: rgba(249,200,70,0.2);">🏃</div>
+                <span class="day-bar__item-time">10:30</span>
+                <span class="day-bar__item-label">Move</span>
+            </div>
+            <div class="day-bar__item">
+                <div class="day-bar__item-icon" style="background: rgba(232,142,191,0.15);">🎨</div>
+                <span class="day-bar__item-time">11:30</span>
+                <span class="day-bar__item-label">Create</span>
+            </div>
+            <div class="day-bar__item">
+                <div class="day-bar__item-icon" style="background: rgba(91,192,235,0.15);">🤝</div>
+                <span class="day-bar__item-time">1:00</span>
+                <span class="day-bar__item-label">Connect</span>
+            </div>
+            <div class="day-bar__item">
+                <div class="day-bar__item-icon" style="background: rgba(75,75,75,0.1);">🏠</div>
+                <span class="day-bar__item-time">3:00</span>
+                <span class="day-bar__item-label">Home</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ ENHANCED TIMELINE ═══════════════════ -->
+    <section style="background: var(--bg-cream); padding: 40px 0;">
+        <div class="timeline timeline--enhanced">
+            
+            <!-- Arrive -->
+            <div class="timeline-item reveal-up">
+                <div class="timeline__node">
+                    <div class="timeline__time-badge">8:00 AM</div>
+                </div>
+                <div class="timeline__text-col">
+                    <h3 class="timeline__title" style="color: var(--purple);">Arrive</h3>
+                    <p class="timeline__desc">A warm start to the day. Teachers greet families, children put away their own belongings to build independence, and settle into self-directed morning play.</p>
+                </div>
+                <div class="timeline__image-col reveal-scale">
+                    <img src="assets/images/community.png" alt="Arrival" class="timeline__image">
+                </div>
+            </div>
+
+            <!-- Explore -->
+            <div class="timeline-item reveal-up">
+                <div class="timeline__node">
+                    <div class="timeline__time-badge">9:00 AM</div>
+                </div>
+                <div class="timeline__text-col">
+                    <h3 class="timeline__title" style="color: var(--green);">Explore</h3>
+                    <p class="timeline__desc">Classroom activities open up. Children move freely between learning centers, engaging in puzzles, early reading, math concepts, and science experiments.</p>
+                </div>
+                <div class="timeline__image-col reveal-scale">
+                    <img src="assets/images/senior.png" alt="Exploring" class="timeline__image">
+                </div>
+            </div>
+
+            <!-- Move -->
+            <div class="timeline-item reveal-up">
+                <div class="timeline__node">
+                    <div class="timeline__time-badge">10:30 AM</div>
+                </div>
+                <div class="timeline__text-col">
+                    <h3 class="timeline__title" style="color: var(--yellow-dark);">Move</h3>
+                    <p class="timeline__desc">Outdoor and physical activities. Running, climbing, and cooperative games help children burn energy and develop gross motor skills.</p>
+                </div>
+                <div class="timeline__image-col reveal-scale">
+                    <img src="assets/images/children-playing.png" alt="Moving" class="timeline__image">
+                </div>
+            </div>
+
+            <!-- Create -->
+            <div class="timeline-item reveal-up">
+                <div class="timeline__node">
+                    <div class="timeline__time-badge">11:30 AM</div>
+                </div>
+                <div class="timeline__text-col">
+                    <h3 class="timeline__title" style="color: var(--pink);">Create</h3>
+                    <p class="timeline__desc">Creative experiences in the art studio or music corner. Getting messy, expressing emotions, and turning imagination into reality.</p>
+                </div>
+                <div class="timeline__image-col reveal-scale">
+                    <img src="assets/images/nursery.png" alt="Creating" class="timeline__image">
+                </div>
+            </div>
+
+            <!-- Connect -->
+            <div class="timeline-item reveal-up">
+                <div class="timeline__node">
+                    <div class="timeline__time-badge">1:00 PM</div>
+                </div>
+                <div class="timeline__text-col">
+                    <h3 class="timeline__title" style="color: var(--blue);">Connect</h3>
+                    <p class="timeline__desc">Group interaction and communication. Story time, circle time, and shared meals where children learn to listen, speak, and empathize.</p>
+                </div>
+                <div class="timeline__image-col reveal-scale">
+                    <img src="assets/images/junior.png" alt="Connecting" class="timeline__image">
+                </div>
+            </div>
+
+            <!-- Go Home -->
+            <div class="timeline-item reveal-up">
+                <div class="timeline__node" style="border-color: var(--text-dark);">
+                    <div class="timeline__time-badge">3:00 PM</div>
+                </div>
+                <div class="timeline__text-col">
+                    <h3 class="timeline__title" style="color: var(--text-dark);">Go Home</h3>
+                    <p class="timeline__desc">A quiet transition. Gathering belongings, saying goodbye to friends and teachers, and heading home to rest and share stories.</p>
+                </div>
+                <div class="timeline__image-col reveal-scale">
+                    <img src="assets/images/playgroup.png" alt="Going Home" class="timeline__image">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════ FOOTER ═══════════════════ -->
+    <footer id="footer" class="footer" style="margin-top: 0;">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <img src="assets/images/logo.png" alt="The Kite Preschool" class="footer__logo">
+                    <h2 class="section-heading section-heading--light" style="margin-bottom:8px;">The Kite Preschool</h2>
+                    <p class="footer__tagline">Where every child's imagination takes flight.</p>
+                    <div class="footer__nav-links">
+                        <a href="index.html">Home</a> <a href="about.html">About</a> <a href="learning.html">Learning</a> <a href="activities.html">Activities</a> <a href="our-day.html">Our Day</a> <a href="our-team.html">Our Team</a> <a href="parents.html">Parents</a> <a href="gallery.html">Gallery</a> <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer__info">
+                    <div class="footer__col">
+                        <h3 class="footer__col-title">Contact Us</h3>
+                        <ul class="footer__list footer__list--contact">
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>B10, Service Center,<br>Madinaty, Cairo, Egypt</span></li>
+                        </ul>
+                        <a href="contact.html" class="btn btn--directions" id="directions-btn">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__copy">&copy; 2026 The Kite Preschool. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
